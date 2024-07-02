@@ -135,6 +135,20 @@
   stroke: none
 )
 
+#let proc-years(yrs) = {
+  if "start" in yrs {
+    if "end" in yrs {
+      str(yrs.start) + "--" + str(yrs.end)
+    } else {
+      str(yrs.start) + "-- Present"
+    }
+  } else if "end" in yrs {
+      str(yrs.end)
+  } else {
+    none
+  }
+}
+
 #let list-education(file) = {
   let info = yaml(file).education
 
@@ -148,7 +162,7 @@
           columns:(2fr, 1fr),
           align: (left, right),
           gutter: 0pt,
-          uni.degree, str(uni.year.end)
+          uni.degree, proc-years(uni.year)
       )
     }
   }
