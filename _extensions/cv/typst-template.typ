@@ -157,7 +157,7 @@
 
   for i in range(n_uni) {
     text(weight: "bold", size: 16pt, info.keys().at(i))
-
+    v(-0.5em)
     for uni in info.values().at(i) {
       grid(
         inset: 0pt,
@@ -177,8 +177,9 @@
 
   for i in range(n_jobs) {
     text(weight: "bold", size: 16pt, info.keys().at(i))
-
+    v(-0.5em)
     for job in info.values().at(i) {
+
       grid(
           columns:(4fr, 1fr),
           align: (left, right),
