@@ -160,10 +160,30 @@
 
     for uni in info.values().at(i) {
       grid(
-          columns:(2fr, 1fr),
+        inset: 0pt,
+        columns:(4fr, 1fr),
+        align: (left, right),
+        gutter: 0pt,
+        uni.degree, proc-years(uni.year)
+      )
+    }
+  }
+}
+
+#let list-appointments(file) = {
+  let info = yaml(file).appointments
+
+  let n_jobs = info.len()
+
+  for i in range(n_jobs) {
+    text(weight: "bold", size: 16pt, info.keys().at(i))
+
+    for job in info.values().at(i) {
+      grid(
+          columns:(4fr, 1fr),
           align: (left, right),
           gutter: 0pt,
-          uni.degree, proc-years(uni.year)
+          job.position, proc-years(job.year)
       )
     }
   }

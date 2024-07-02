@@ -2,7 +2,8 @@
 -- checks these so they can be prefixed for list-[listing]
 local function check_listing(listing)
   local validListings = {
-    "education"
+    "education",
+    "appointments"
   }
   for _, v in ipairs(validListings) do
     if v == listing then

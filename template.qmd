@@ -28,9 +28,14 @@ This template is made of a base template and a shortcode, `{{{ cv type file }}}`
 This allows you to get the full benefits from Quarto, while having sensible formatting options.
 Notably, these fill from a yaml file (or a series of them).
 
+## Appointments
+
+{{< cv appointments education.yaml >}}
+
 ## Education
 
 {{< cv education >}}
+
 
 
 ## Tables work outside too
