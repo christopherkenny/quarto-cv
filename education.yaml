@@ -1,0 +1,13 @@
+education:
+  Princeton University:
+    - degree: Ph.D.
+      year:
+        end: 1959
+    - degree: M.A.
+      year:
+        end: 1957
+  Harvard College:
+    - degree: B.A.
+      year:
+        end: 1953
+        start: 1949

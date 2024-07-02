@@ -1,0 +1,27 @@
+---
+author:
+  - name: Sidney Verba
+    url: https://en.wikipedia.org/wiki/Sidney_Verba
+    phone: 123456789
+    email: "example@harvard.edu"
+    degrees:
+      - PhD
+    affiliations:
+      - name: Harvard University
+        department: Department of Government
+    title: "Carl H. Pforzheimer University Professor (Emeritus)"
+date: today
+format:
+  cv-typst: default
+---
+
+## Using this template
+
+
+## Shortcodes
+
+## Education
+
+{{< cv education >}}
+
+text
