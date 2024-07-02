@@ -18,6 +18,12 @@ format:
 ## Using this template
 
 
+The goal of this template is to combine Quarto's best features with typst's best to get a cv powered by shortcodes.
+For the best exerience, you will want to combine shortcodes with text in Quarto.
+The shortcodes will format standard entries, but do not cover all possible cases.
+As such, you may want to format some things using `typst` blocks or any other Quarto inputs.
+This template was designed by [https://christophertkenny.com/](https://christophertkenny.com/).
+
 ## Shortcodes
 
 This template is made of a base template and a shortcode, `{{{ cv type file }}}`.
