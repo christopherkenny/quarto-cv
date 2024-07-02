@@ -20,8 +20,27 @@ format:
 
 ## Shortcodes
 
+This template is made of a base template and a shortcode, `{{{ cv type file }}}`.
+
+- type: points to one of `education`
+- file: points to a file with a field with the same title as `type`
+
+This allows you to get the full benefits from Quarto, while having sensible formatting options.
+Notably, these fill from a yaml file (or a series of them).
+
 ## Education
 
 {{< cv education >}}
 
-text
+
+## Tables work outside too
+
+Here, we can see that you can use text or a tables if included functions are insufficient.
+
+| rank     | package  |   count  |
+| -------: | :------- | -------: |
+|     1    |    rlang |  1672290 |
+|     2    |  ggplot2 |  1624767 |
+|     3    |      cli |  1389491 |
+|     4    |     Rcpp |  1386753 |
+|     5    |    dplyr |  1361177 |

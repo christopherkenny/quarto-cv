@@ -20,7 +20,7 @@
   lang: "en",
   region: "US",
   font: (),
-  fontsize: 11pt,
+  fontsize: 12pt,
   sectionnumbering: none,
   toc: false,
   toc_title: none,
@@ -51,6 +51,7 @@
 
   // handle first page header
   set heading(numbering: sectionnumbering)
+  show heading.where(level: 1): head => block(width: 100%)[#text(weight: "bold", to-string(head.body)) #v(-14pt) #line(length: 100%)]
 
   if authors != none {
     align(center, {
@@ -105,7 +106,7 @@
   if date != none {
     align(center)[#date]
   }
-  line(length: 100%)
+  //line(length: 100%)
 
   if toc {
     let title = if toc_title == none {
@@ -155,7 +156,7 @@
   let n_uni = info.len()
 
   for i in range(n_uni) {
-    text(weight: "bold", info.keys().at(i))
+    text(weight: "bold", size: 16pt, info.keys().at(i))
 
     for uni in info.values().at(i) {
       grid(
