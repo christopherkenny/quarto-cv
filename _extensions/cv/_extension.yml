@@ -9,5 +9,10 @@ contributes:
         - typst-template.typ
         - typst-show.typ
       date-format: "MMMM YYYY"
+      filters:
+        - multibib
+      validate-yaml: false
+      format-resources:
+        - chicago-author-date.csl
   shortcodes:
     - cv.lua

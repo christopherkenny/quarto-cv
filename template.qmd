@@ -13,7 +13,15 @@ author:
 date: today
 format:
   cv-typst:
-    keep-typ: false
+    keep-typ: true
+bibliographystyle: "chicago-author-date"
+citation-style: "chicago-author-date"
+bibliography:
+  books: "books.bib"
+  bookchapters: "book_chapters.bib"
+  articles: "journal_articles.bib"
+nocite: '@*'
+
 ---
 
 ## Using this template
@@ -27,7 +35,7 @@ This template was designed by [Christopher T. Kenny](https://christophertkenny.c
 
 ## Shortcodes
 
-This template is made of a base template and a shortcode, `{{{ cv type file }}}`.
+This template is made of a base template and a shortcode, `{{{< cv type file >}}}`.
 
 - type: points to one of the supported shortcode types below
 - file: points to a file with a field with the same title as `type`
@@ -51,15 +59,18 @@ The supported shortcodes types are:
 
 ## Books
 
-{{< cv bibliography books.bib >}}
+:::{#refs-books}
+:::
 
 ## Peer-Reviewed Articles
 
-<!-- {{< cv bibliography journal_articles.bib >}} -->
+:::{#refs-articles}
+:::
 
 ## Book Chapters
 
-{{< cv bibliography book_chapters.bib >}}
+:::{#refs-bookchapters}
+:::
 
 ## Honors
 

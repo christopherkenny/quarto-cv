@@ -10,6 +10,7 @@
   }
 }
 
+#set bibliography(style: "chicago-author-date")
 
 #let cv(
   authors: none,
