@@ -30,7 +30,39 @@ The goal of this template is to combine Quarto's best features with typst's best
 For the best exerience, you will want to combine shortcodes with text in Quarto.
 The shortcodes will format standard entries, but do not cover all possible cases.
 As such, you may want to format some things using `typst` blocks or any other Quarto inputs.
-This template was designed by [Christopher T. Kenny](https://christophertkenny.com/).
+This template was designed by [Christopher T. Kenny](https://christophertkenny.com/). Full directions listed at the end of this document.
+
+
+## Appointments
+
+{{< cv appointments education.yaml >}}
+
+## Education
+
+{{< cv education >}}
+
+## Books
+
+:::{#refs-books}
+:::
+
+## Peer-Reviewed Articles
+
+:::{#refs-articles}
+:::
+
+## Book Chapters
+
+:::{#refs-bookchapters}
+:::
+
+## Honors
+
+{{< cv honors >}}
+
+## Service
+
+{{< cv positions >}}
 
 ## Shortcodes
 
@@ -81,38 +113,6 @@ where key is one of the keys in your YAML (e.g., `book`, `bookchapters`, or `art
 This is totally open and you could include things like "Working Papers" with their own bib file.
 
 The key limitation (currently) is that you require a different `.bib` file for each of your types of citation listings.
-
-
-## Appointments
-
-{{< cv appointments education.yaml >}}
-
-## Education
-
-{{< cv education >}}
-
-## Books
-
-:::{#refs-books}
-:::
-
-## Peer-Reviewed Articles
-
-:::{#refs-articles}
-:::
-
-## Book Chapters
-
-:::{#refs-bookchapters}
-:::
-
-## Honors
-
-{{< cv honors >}}
-
-## Service
-
-{{< cv positions >}}
 
 ## Other tips: General Quarto syntax work
 
