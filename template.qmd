@@ -13,14 +13,13 @@ author:
 date: today
 format:
   cv-typst:
-    keep-typ: true
+    keep-typ: false
 csl: "revsort-chicago-author-date.csl"
 bibliography:
   books: "books.bib"
   bookchapters: "book_chapters.bib"
   articles: "journal_articles.bib"
 nocite: '@*'
-
 ---
 
 ## Using this template

@@ -8,3 +8,4 @@
 _extensions/cv/*.pdf
 template.pdf
 /.luarc.json
+!template.pdf
