@@ -14,5 +14,6 @@ contributes:
       validate-yaml: false
       format-resources:
         - nosort-chicago-author-date.csl
+        - revsort-chicago-author-date.csl
   shortcodes:
     - cv.lua

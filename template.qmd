@@ -14,7 +14,7 @@ date: today
 format:
   cv-typst:
     keep-typ: true
-csl: "nosort-chicago-author-date.csl"
+csl: "revsort-chicago-author-date.csl"
 bibliography:
   books: "books.bib"
   bookchapters: "book_chapters.bib"
@@ -44,8 +44,43 @@ Notably, these fill from a yaml file (or a series of them).
 
 The supported shortcodes types are:
 
-- appointments: for academic appointment information
-- education: for education history
+- appointments: for academic appointment information (example file: `education.yaml` under `appointments`)
+- education: for education history (example file: `education.yaml` under `education`)
+- positions: for other positions or services (example file: `positions.yaml`)
+- honors: for listing honors (example file: `honors.yaml`)
+
+Note that all of these will fill in based on the order in the YAML. I recommend listing them in reverse order and potentially moving any lifetime awards to the top.
+
+## Listing references
+
+This template ships with an adjusted version of `chicago-author-date.csl`, as `nosort-chicago-author-date.csl`. The two differences here are that it doesn't sort, so whatever order is in your `.bib` file is the order that the references will be displayed. Second, it does not replace authors with `---` when you coauthor with the same group repeatedly. As there is no sorting, this looks funny if you have a random case of this, compared to a normal bibliography.
+If your `.bib` is messy, use `revsort-chicago-author-date.csl` instead, which reverse sorts by year.
+
+To include a reference, I currently use the `pandoc-ext/multibib` extension. When Quarto updates to use Typst 0.13.0 in version 1.7, this will no longer be necessary.
+
+The current format thus looks like:
+
+1. Add the following to the YAML:
+
+```
+bibliography:
+  books: "books.bib"
+  bookchapters: "book_chapters.bib"
+  articles: "journal_articles.bib"
+```
+
+2. Include a ref div where you want to insert the references:
+
+```
+:::{#refs-KEY}
+:::
+```
+
+where key is one of the keys in your YAML (e.g., `book`, `bookchapters`, or `articles`).
+
+This is totally open and you could include things like "Working Papers" with their own bib file.
+
+The key limitation (currently) is that you require a different `.bib` file for each of your types of citation listings.
 
 
 ## Appointments
@@ -79,9 +114,11 @@ The supported shortcodes types are:
 
 {{< cv positions >}}
 
-## Other tips: Tables work
+## Other tips: General Quarto syntax work
 
-Here, we can see that you can use text or a tables if included functions are insufficient.
+### Tables
+
+Here, we can see that you can use text or a tables if included functions are insufficient. For full documentation on Quarto, see: <https://quarto.org/docs/guide/>.
 
 | rank     | package  |   count  |
 | -------: | :------- | -------: |
@@ -90,3 +127,18 @@ Here, we can see that you can use text or a tables if included functions are ins
 |     3    |      cli |  1389491 |
 |     4    |     Rcpp |  1386753 |
 |     5    |    dplyr |  1361177 |
+
+
+
+### Raw Typst
+
+Typst is much easier to learn than LaTeX in my opinion. If you want to add some custom features, you can do that with raw Typst chunks.
+
+For example, suppose that this is a fake CV for a famed, but deceased, member of the Harvard faculty.
+You might want to add a quote from the NYT obit:
+
+```{=typst}
+#quote(attribution: "Sam Roberts, NYTimes", block: true)[
+  Sidney Verba, whose pioneering research comparing political behavior among the world’s democracies became a classic book among students of politics, died on March 4 at his home in Cambridge, Mass. He was 86.
+]
+```
