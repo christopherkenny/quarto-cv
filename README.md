@@ -15,7 +15,7 @@ quarto use template christopherkenny/quarto-cv
 This will install the format extension and create an example qmd file
 that you can use as a starting place for your document.
 
-## Using `quarto-cv`
+## Using `cv`
 
 This extension builds your CV using [Quarto](https://quarto.org/) with a [Typst](https://github.com/typst/typst) backend. The goal of this template is to explore combining two of the best features of Quarto and Typst.
 Typst allows you to provide data as YAML and format it from there, while Quarto allows you to use "shortcodes" to insert arbitrary code at a given point.
