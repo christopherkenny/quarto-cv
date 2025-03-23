@@ -1,7 +1,12 @@
 # `quarto-cv` Format
 
-## Installing
+This is a simple Quarto + Typst template for academic CVs.
+The data inputs are driven by YAML and bib files, allowing for nice version control abilities.
 
+<!-- pdftools::pdf_convert('template.pdf', pages = 1) -->
+![[template.qmd](template.qmd)](template_1.png)
+
+## Installing
 
 ```bash
 quarto use template christopherkenny/quarto-cv
