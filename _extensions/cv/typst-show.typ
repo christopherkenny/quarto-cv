@@ -73,5 +73,11 @@ $if(toc-indent)$
 $endif$
   toc_depth: $toc-depth$,
   cols: $if(columns)$$columns$$else$1$endif$,
+$if(linestretch)$
+  linestretch: $linestretch$,
+$endif$
+$if(linkcolor)$
+  linkcolor: "$linkcolor$",
+$endif$
   doc,
 )

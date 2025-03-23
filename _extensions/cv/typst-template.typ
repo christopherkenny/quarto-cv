@@ -27,6 +27,8 @@
   toc_title: none,
   toc_depth: none,
   toc_indent: 1.5em,
+  linestretch: 1,
+  linkcolor: "#800000",
   doc,
 ) = {
 
@@ -42,13 +44,24 @@
     margin: margin,
     numbering: "1"
   )
-  set par(justify: true)
+  set par(
+    justify: true,
+    leading: linestretch * 0.65em
+  )
   set text(
     lang: lang,
     region: region,
     font: font,
     size: fontsize
   )
+
+    show link: this => {
+    if type(this.dest) != label {
+      text(this, fill: rgb(linkcolor.replace("\\#", "#")))
+    } else {
+      text(this, fill: rgb("#0000CC"))
+    }
+  }
 
   // handle first page header
   set heading(numbering: sectionnumbering)
