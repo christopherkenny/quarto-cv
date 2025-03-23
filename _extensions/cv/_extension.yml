@@ -13,6 +13,6 @@ contributes:
         - multibib
       validate-yaml: false
       format-resources:
-        - chicago-author-date.csl
+        - nosort-chicago-author-date.csl
   shortcodes:
     - cv.lua
