@@ -22,17 +22,23 @@ The goal of this template is to combine Quarto's best features with typst's best
 For the best exerience, you will want to combine shortcodes with text in Quarto.
 The shortcodes will format standard entries, but do not cover all possible cases.
 As such, you may want to format some things using `typst` blocks or any other Quarto inputs.
-This template was designed by [https://christophertkenny.com/](https://christophertkenny.com/).
+This template was designed by [Christopher T. Kenny](https://christophertkenny.com/).
 
 ## Shortcodes
 
 This template is made of a base template and a shortcode, `{{{ cv type file }}}`.
 
-- type: points to one of `education`
+- type: points to one of the supported shortcode types below
 - file: points to a file with a field with the same title as `type`
 
 This allows you to get the full benefits from Quarto, while having sensible formatting options.
 Notably, these fill from a yaml file (or a series of them).
+
+The supported shortcodes types are:
+
+- appointments: for academic appointment information
+- education: for education history
+
 
 ## Appointments
 
@@ -44,7 +50,7 @@ Notably, these fill from a yaml file (or a series of them).
 
 
 
-## Tables work outside too
+## Other tips: Tables work
 
 Here, we can see that you can use text or a tables if included functions are insufficient.
 
