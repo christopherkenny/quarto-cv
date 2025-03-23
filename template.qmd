@@ -53,6 +53,14 @@ The supported shortcodes types are:
 
 {{< cv bibliography books.bib >}}
 
+## Peer-Reviewed Articles
+
+<!-- {{< cv bibliography journal_articles.bib >}} -->
+
+## Book Chapters
+
+{{< cv bibliography book_chapters.bib >}}
+
 ## Honors
 
 {{< cv honors >}}
