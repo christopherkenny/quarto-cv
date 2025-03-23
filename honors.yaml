@@ -1,0 +1,75 @@
+honors:
+  - title: "Helen Dinerman Prize for Lifetime Contribution to Public Opinion Research"
+    organization: "World Association of Public Opinion Research"
+    year: 2004
+    type: "Prize"
+
+  - title: "Johan Skytte Prize"
+    organization: "University of Uppsala"
+    year: 2002
+    type: "Prize"
+    description: "For distinguished contribution to political science"
+
+  - title: "Warren Miller Prize"
+    organization: "Inter-university Consortium for Political and Social Research (ICPSR)"
+    year: 2001
+    type: "Prize"
+    description: "For Distinguished Contribution to the Social Sciences"
+
+  - title: "Warren Miller Award"
+    organization: "American Political Science Association"
+    year: 2000
+    type: "Award"
+    description: "Career Contribution to the Study of Public Opinion and Elections"
+
+  - title: "Tanner Lecturer"
+    organization: "Oxford University"
+    year: 1999
+    type: "Lecture"
+
+  - title: "James Madison Award"
+    organization: "American Political Science Association"
+    year: 1993
+    type: "Award"
+    frequency: "Triennial"
+    description: "Career Contribution to Political Science"
+
+  - title: "Victoria Schuck Award"
+    organization: "American Political Science Association"
+    year: 2001
+    type: "Prize"
+    description: "Best Book on Women and Politics"
+
+  - title: "Woodrow Wilson Award"
+    organization: "American Political Science Association"
+    year: 1976
+    type: "Prize"
+    description: "Best Book in Political Science"
+
+  - title: "Gladys Kammerer Award"
+    organization: "American Political Science Association"
+    year: 1972
+    type: "Prize"
+    description: "Best Book on American National Policy"
+
+  - title: "Guggenheim Fellowship"
+    organization: "John Simon Guggenheim Memorial Foundation"
+    year: 1980
+    type: "Fellowship"
+
+  - title: "Fellow"
+    organization: "Center for Advanced Study in the Behavioral Sciences"
+    year: 1963
+    type: "Fellowship"
+
+  - title: "Fellow"
+    organization: "American Academy of Arts and Sciences"
+    type: "Honor"
+
+  - title: "Member"
+    organization: "American Philosophical Society"
+    type: "Membership"
+
+  - title: "Member"
+    organization: "National Academy of Sciences"
+    type: "Membership"

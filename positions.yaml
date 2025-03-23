@@ -1,0 +1,66 @@
+official_positions:
+  National Academy of Sciences:
+    - position: Chair, Social and Political Science Section
+      year:
+        start: 2003
+        end: 2007
+    - position: Chair, Committee on Human Rights
+      year:
+        start: 2008
+    - position: Chair, Committee on International Conflict and Cooperation, National Research Council
+      year:
+        start: 1991
+        end: 1993
+    - position: Member, Committee on Democratization, National Research Council
+  American Political Science Association:
+    - position: President
+      year:
+        start: 1994
+        end: 1995
+    - position: Vice-President
+      year:
+        start: 1979
+        end: 1981
+    - position: Program Chairman, Annual Meeting
+      year:
+        start: 1971
+    - position: Executive Council Member
+      year:
+        start: 1973
+        end: 1976
+  Harvard University:
+    - position: Chairman, Department of Government
+      year:
+        start: 1977
+        end: 1980
+    - position: Member, Board of Syndics, Harvard University Press
+      year:
+        start: 1975
+        end: 1984
+    - position: Member, Board of Directors, Harvard University Press
+      year:
+        start: 1984
+        end: 1991
+    - position: Chair, Board of Directors, Harvard University Press
+      year:
+        start: 1991
+        end: 2007
+  Social Science Research Council:
+    - position: Chair, Committee on Problems and Policy
+      year:
+        start: 1977
+        end: 1985
+    - position: Executive Committee Member
+      year:
+        start: 1977
+        end: 1985
+  National Research Council:
+    - position: Commission Member, Behavioral and Social Sciences
+      year:
+        start: 1984
+        end: 1989
+  International Studies Association:
+    - position: Vice-President
+      year:
+        start: 1972
+        end: 1973
