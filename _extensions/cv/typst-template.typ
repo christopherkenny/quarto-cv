@@ -139,9 +139,9 @@
 #let proc-years(yrs) = {
   if "start" in yrs {
     if "end" in yrs {
-      str(yrs.start) + "--" + str(yrs.end)
+      str(yrs.start) + sym.dash.en + str(yrs.end)
     } else {
-      str(yrs.start) + "-- Present"
+      str(yrs.start) + sym.dash.en + "Present"
     }
   } else if "end" in yrs {
       str(yrs.end)
@@ -184,8 +184,59 @@
           columns:(4fr, 1fr),
           align: (left, right),
           gutter: 0pt,
-          job.position, proc-years(job.year)
+          job.position, if "year" in job { proc-years(job.year) } else { "" }
       )
     }
   }
+}
+
+#let list-positions(file) = {
+  let info = yaml(file).positions
+
+  let n_jobs = info.len()
+
+  for i in range(n_jobs) {
+    text(weight: "bold", size: 16pt, info.keys().at(i))
+    v(-0.5em)
+    for job in info.values().at(i) {
+
+      grid(
+          columns:(4fr, 1fr),
+          align: (left, right),
+          gutter: 0pt,
+          job.position, if "year" in job { proc-years(job.year) } else { "" }
+      )
+    }
+  }
+}
+
+#let list-honors(file) = {
+  let honors = yaml(file).honors
+
+  for honor in honors {
+    grid(
+      columns: (1fr, 11fr),
+      align: (left, left),
+      gutter: 0.75em,
+      // Show year if it exists
+      if "year" in honor { str(honor.year) } else { "" },
+      block[
+        #strong(honor.title)
+        #if "organization" in honor {
+          sym.dash.em
+          emph(" " + honor.organization)
+        }
+        #if "description" in honor {
+          sym.dash.em
+          text(" " + honor.description)
+        }
+      ]
+    )
+    v(0.5em)
+  }
+}
+
+#let list-bibliography(file) = {
+  bibliography(file, title: none,
+    full: true, style: "chicago-author-date")
 }

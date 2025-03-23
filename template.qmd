@@ -12,7 +12,8 @@ author:
     title: "Carl H. Pforzheimer University Professor (Emeritus)"
 date: today
 format:
-  cv-typst: default
+  cv-typst:
+    keep-typ: false
 ---
 
 ## Using this template
@@ -48,7 +49,17 @@ The supported shortcodes types are:
 
 {{< cv education >}}
 
+## Books
 
+{{< cv bibliography books.bib >}}
+
+## Honors
+
+{{< cv honors >}}
+
+## Service
+
+{{< cv positions >}}
 
 ## Other tips: Tables work
 

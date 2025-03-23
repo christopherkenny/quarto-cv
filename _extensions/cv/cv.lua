@@ -3,7 +3,10 @@
 local function check_listing(listing)
   local validListings = {
     "education",
-    "appointments"
+    "appointments",
+    "positions",
+    "honors",
+    "bibliography"
   }
   for _, v in ipairs(validListings) do
     if v == listing then
