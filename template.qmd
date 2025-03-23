@@ -15,7 +15,8 @@ format:
   cv-typst:
     keep-typ: true
 bibliographystyle: "chicago-author-date"
-citation-style: "chicago-author-date"
+#citation-style: "chicago-author-date"
+csl: chicago-author-date.csl
 bibliography:
   books: "books.bib"
   bookchapters: "book_chapters.bib"
