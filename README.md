@@ -1,4 +1,4 @@
-# `quarto-cv` Format
+# `cv` Format
 
 This is a simple Quarto + Typst template for academic CVs.
 The data inputs are driven by YAML and bib files, allowing for nice version control abilities.
